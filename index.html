@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Oyincakesandmore - Premium Nigerian Catering & Homemade Delicacies | Lagos
+    </title>
+    <meta
+      name="description"
+      content="Authentic Nigerian cuisine, custom cakes, and event catering. Fresh jollof rice, fried rice, chin chin, zobo, and more. Serving Lagos with love." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <!-- Header Top -->
+    <div class="header-top">
+      <div class="header-top-content">
+        <div class="header-links">
+          <span>📍 Malete, Kwara State, Nigeria</span>
+          <a href="tel:+2349015229618">📱 +234 901 522 9618</a>
+          <a href="mailto:hello@oyincakes.com">📧 hello@oyincakes.com</a>
+        </div>
+        <div class="header-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="WhatsApp">w</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header with Logo -->
+    <header>
+      <div class="nav-container">
+        <a href="#" class="logo">
+          <img
+            src="/Oyincakesandmore/image/logo.jfif"
+            alt="Oyincakesandmore Logo" />
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          ☰
+        </button>
+        <nav>
+          <ul id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a
+          href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20order%20food%20and%20cakes"
+          class="header-cta"
+          >Order Now</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">⭐ Quality Cakes & Delicious Meals</div>
+          <h1>
+            Great Food and Sweet Treats
+            <span class="highlight">Made Just for You</span>
+          </h1>
+          <p class="hero-subtitle">
+            When you're hungry for good food, or craving something sweet — we've
+            got you covered!
+          </p>
+          <p class="hero-description">
+            From perfectly spiced jollof rice and juicy fried chicken to custom
+            celebration cakes, chin chin, zobo juice and more — everything is
+            prepared fresh with real kitchen love. Whether it's a party, family
+            dinner, or just a craving, we make food that brings people together.
+          </p>
+          <div class="mini-products">
+            <div class="mini-product">
+              <div class="mini-product-img">🎂</div>
+              <div class="mini-product-info">
+                <h4>Bento Cakes</h4>
+                <div class="mini-product-rating">⭐ 4.9</div>
+              </div>
+            </div>
+            <div class="mini-product">
+              <div class="mini-product-img">🧁</div>
+              <div class="mini-product-info">
+                <h4>Cupcakes</h4>
+                <div class="mini-product-rating">⭐ 4.8</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">View Our Menu</a>
+            <a
+              href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20book%20catering"
+              class="btn btn-outline"
+              >Book Catering</a
+            >
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">10,000+</span>
+              <span class="stat-label">Happy Customers</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">Countless</span>
+              <span class="stat-label">Orders Delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5.0★</span>
+              <span class="stat-label">Customer Rating</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-images-stack">
+          <div class="hero-image rotated-left">
+            <img
+              src="/Oyincakesandmore/products/top-cake.jpg"
+              alt="Premium Cake"
+              loading="eager" />
+            <div class="hero-badge-overlay">
+              <div class="label">From</div>
+              <div class="price">₦4,500</div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="/Oyincakesandmore/products/oyincakes.jpg"
+              alt="Delicious Oyincakes"
+              loading="lazy" />
+          </div>
+          <div class="hero-image rotated-right">
+            <img
+              src="/Oyincakesandmore/products/shawarma.jpg"
+              alt="Delicious Shawarma"
+              loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="menu">
+      <div class="section-header">
+        <div class="section-label">Our Menu</div>
+        <h2 class="section-title">
+          Popular <span class="highlight">Items</span>
+        </h2>
+      </div>
+      <div class="products-grid">
+        <div class="product-card fade-up">
+          <div class="product-image">
+            <img
+              src="/Oyincakesandmore/products/food-jollof.jfif"
+              alt="Jollof Rice"
+              loading="lazy" />
+            <span class="product-badge">Best Seller</span>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(4.9) 450+ orders</span>
+            </div>
+            <h3 class="product-name">Jollof Rice Party Pack</h3>
+            <p class="product-desc">
+              Authentic party jollof with chicken, sides included
+            </p>
+            <div class="product-footer">
+              <span class="product-price">₦8,500</span>
+              <a
+                href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20order%20Jollof%20Rice%20Party%20Pack"
+                class="order-btn"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up">
+          <div class="product-image">
+            <img
+              src="/Oyincakesandmore/products/zobo.jfif"
+              alt="Zobo Drink"
+              loading="lazy" />
+            <span class="product-badge">Popular</span>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(5.0) 380+ orders</span>
+            </div>
+            <h3 class="product-name">Homemade Zobo Drinks</h3>
+            <p class="product-desc">
+              Refreshing zobo drink, made with natural hibiscus
+            </p>
+            <div class="product-footer">
+              <span class="product-price">₦7,500</span>
+              <a
+                href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20order%20Zobo%20Drinks"
+                class="order-btn"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up">
+          <div class="product-image">
+            <img
+              src="/Oyincakesandmore/products/bento-cake.jfif"
+              alt="Bento Cake"
+              loading="lazy" />
+            <span class="product-badge">Popular</span>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(4.8) 320+ orders</span>
+            </div>
+            <h3 class="product-name">Bento Cake</h3>
+            <p class="product-desc">
+              Beautifully decorated cake for special occasions
+            </p>
+            <div class="product-footer">
+              <span class="product-price">₦12,000</span>
+              <a
+                href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20order%20Bento%20Cake"
+                class="order-btn"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up">
+          <div class="product-image">
+            <img
+              src="/Oyincakesandmore/products/spaghetti.jfif"
+              alt="Spaghetti"
+              loading="lazy" />
+            <span class="product-badge">Popular</span>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(5.0) 520+ orders</span>
+            </div>
+            <h3 class="product-name">Spaghetti</h3>
+            <p class="product-desc">
+              Well cooked spaghetti for all sort of events
+            </p>
+            <div class="product-footer">
+              <span class="product-price">₦5,000</span>
+              <a
+                href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20order%20Spaghetti"
+                class="order-btn"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up">
+          <div class="product-image">
+            <img
+              src="/Oyincakesandmore/products/meatpie.jfif"
+              alt="Meat Pie"
+              loading="lazy" />
+            <span class="product-badge">Popular</span>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(4.9) 680+ orders</span>
+            </div>
+            <h3 class="product-name">Meat Pies (Dozen)</h3>
+            <p class="product-desc">
+              Fresh, flaky, perfectly seasoned meat pies
+            </p>
+            <div class="product-footer">
+              <span class="product-price">₦3,500</span>
+              <a
+                href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20order%20Meat%20Pies"
+                class="order-btn"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up">
+          <div class="product-image">
+            <img
+              src="/Oyincakesandmore/products/chin-chin.jpg"
+              alt="Chin Chin"
+              loading="lazy" />
+            <span class="product-badge">New</span>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(4.9) 420+ orders</span>
+            </div>
+            <h3 class="product-name">Chin Chin (1kg)</h3>
+            <p class="product-desc">Crunchy, sweet, homemade chin chin</p>
+            <div class="product-footer">
+              <span class="product-price">₦2,500</span>
+              <a
+                href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20order%20Chin%20Chin"
+                class="order-btn"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up">
+          <div class="product-image">
+            <img
+              src="/Oyincakesandmore/products/cake-parfiat.jpg"
+              alt="Cake Parfait"
+              loading="lazy" />
+            <span class="product-badge">-15%</span>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(5.0) 390+ orders</span>
+            </div>
+            <h3 class="product-name">Cake Parfait</h3>
+            <p class="product-desc">Well packaged cake parfaits for events</p>
+            <div class="product-footer">
+              <span class="product-price">₦1,800</span>
+              <a
+                href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20order%20Cake%20Parfait"
+                class="order-btn"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up">
+          <div class="product-image">
+            <img
+              src="/Oyincakesandmore/products/yoghurt.jfif"
+              alt="Yoghurt"
+              loading="lazy" />
+            <span class="product-badge">Popular</span>
+          </div>
+          <div class="product-info">
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(4.8) 450+ orders</span>
+            </div>
+            <h3 class="product-name">Homemade Yoghurt (2L)</h3>
+            <p class="product-desc">Creamy, fresh yoghurt made daily</p>
+            <div class="product-footer">
+              <span class="product-price">₦2,200</span>
+              <a
+                href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20order%20Yoghurt"
+                class="order-btn"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <div class="section-header">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">
+          Browse Our <span class="highlight">Categories</span>
+        </h2>
+      </div>
+      <div class="category-grid">
+        <div class="category-card fade-up">
+          <span class="category-icon">🍲</span>
+          <h3>Nigerian Dishes</h3>
+          <p>Jollof rice, fried rice, Spaghetti and more meals</p>
+        </div>
+        <div class="category-card fade-up">
+          <span class="category-icon">🍗</span>
+          <h3>Grilled Chicken</h3>
+          <p>Perfectly seasoned and grilled chicken prepared fresh</p>
+        </div>
+        <div class="category-card fade-up">
+          <span class="category-icon">🧁</span>
+          <h3>Cakes & Pastries</h3>
+          <p>Custom cakes, meat pies, chin chin, and baked treats</p>
+        </div>
+        <div class="category-card fade-up">
+          <span class="category-icon">🍹</span>
+          <h3>Beverages</h3>
+          <p>Homemade zobo and yoghurt</p>
+        </div>
+        <div class="category-card fade-up">
+          <span class="category-icon">🍽️</span>
+          <h3>Event Catering</h3>
+          <p>Professional catering for weddings, parties, and events</p>
+        </div>
+        <div class="category-card fade-up">
+          <span class="category-icon">🎁</span>
+          <h3>Party Packs</h3>
+          <p>Complete surprise packages for your celebrations</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+      <div class="section-header">
+        <div class="section-label">WHY CHOOSE US</div>
+        <h2 class="section-title">Why People Choose Us?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item fade-up">
+          <div class="why-icon">✓</div>
+          <div class="why-content">
+            <h3>Convenient and Reliable</h3>
+            <p>
+              Easy online ordering with flexible delivery options. We deliver
+              fresh, delicious food right to your doorstep in no time.
+            </p>
+          </div>
+        </div>
+        <div class="why-item fade-up">
+          <div class="why-icon">🎨</div>
+          <div class="why-content">
+            <h3>Variety of Options</h3>
+            <p>
+              From classic flavors to exotic creations, we offer a wide
+              selection of cakes, cupcakes, and pastries to suit every taste.
+            </p>
+          </div>
+        </div>
+        <div class="why-item fade-up">
+          <div class="why-icon">⭐</div>
+          <div class="why-content">
+            <h3>Exceptional Quality</h3>
+            <p>
+              We use only the finest ingredients and bake everything fresh
+              daily. No preservatives, no compromises on taste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="section-header">
+        <div class="section-label">SERVICES</div>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">
+          We not only prepare the most delicious food and cakes but also offer
+          special services for our customers and partners. Check them out below
+          and feel free to contact us.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="service-image">
+            <img
+              src="/Oyincakesandmore/products/food-jollof.jfif"
+              alt="Event Catering"
+              loading="lazy" />
+          </div>
+          <div class="service-content">
+            <h3>Event Catering</h3>
+            <p class="service-subtitle">
+              Surprise your guests with authentic Nigerian cuisine and save on
+              your event menu with our special packages!
+            </p>
+            <div class="service-features">
+              <div class="service-feature">
+                <span class="service-icon">🍽️</span>
+                <span class="service-feature-text"
+                  >From entrees to desserts</span
+                >
+              </div>
+            </div>
+            <p class="service-description">
+              Planning a party or corporate event? We provide full catering
+              services with authentic Nigerian dishes, custom cakes, and
+              professional service. Whether it's an intimate gathering or a
+              grand celebration of 400+ guests, we've got you covered!
+            </p>
+            <a
+              href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20book%20event%20catering"
+              class="service-cta"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-image">
+            <img
+              src="/Oyincakesandmore/products/bento-cake.jfif"
+              alt="Custom Cakes"
+              loading="lazy" />
+          </div>
+          <div class="service-content">
+            <h3>Custom Cake Orders</h3>
+            <p class="service-subtitle">
+              Beautiful, delicious cakes designed exactly how you want them for
+              any special occasion!
+            </p>
+            <div class="service-features">
+              <div class="service-feature">
+                <span class="service-icon">🎨</span>
+                <span class="service-feature-text"
+                  >Personalized designs & flavors</span
+                >
+              </div>
+            </div>
+            <p class="service-description">
+              From birthdays to weddings, anniversaries to graduations - we
+              create stunning custom cakes that are as delicious as they are
+              beautiful. Choose your flavor, size, design, and let our expert
+              bakers bring your vision to life!
+            </p>
+            <a
+              href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20order%20a%20custom%20cake"
+              class="service-cta"
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-image">
+            <img
+              src="/Oyincakesandmore/products/yoghurt.jfif"
+              alt="Party Packs"
+              loading="lazy" />
+          </div>
+          <div class="service-content">
+            <h3>Party Packs & Combos</h3>
+            <p class="service-subtitle">
+              Complete food packages perfect for birthdays, office parties, and
+              family celebrations!
+            </p>
+            <div class="service-features">
+              <div class="service-feature">
+                <span class="service-icon">🎁</span>
+                <span class="service-feature-text"
+                  >Everything you need in one pack</span
+                >
+              </div>
+            </div>
+            <p class="service-description">
+              Save time and money with our specially curated party packs! Get
+              jollof rice, fried chicken, drinks, desserts, and more - all
+              perfectly portioned for your guest count. Convenient, delicious,
+              and budget-friendly!
+            </p>
+            <a
+              href="https://wa.me/2349015229618?text=Hello!%20I%20want%20to%20order%20a%20party%20pack"
+              class="service-cta"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+      <div class="section-header">
+        <div class="section-label">HOW IT WORKS</div>
+        <h2 class="section-title">From Order to Doorstep ASAP</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step fade-up">
+          <div class="process-icon">📲</div>
+          <h3>CHOOSE</h3>
+          <p>
+            Browse our menu and select your favorites. Customize to match your
+            needs and place your order via WhatsApp.
+          </p>
+        </div>
+        <div class="process-step fade-up">
+          <div class="process-icon">🍰</div>
+          <h3>WE PREPARE</h3>
+          <p>
+            Our skilled chefs prepare your order fresh using premium
+            ingredients. Everything is made with love and attention to detail.
+          </p>
+        </div>
+        <div class="process-step fade-up">
+          <div class="process-icon">🚚</div>
+          <h3>DELIVER</h3>
+          <p>
+            We carefully pack and deliver your order right to your doorstep.
+            Fresh, hot, and ready to enjoy!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-image fade-up">
+          <img
+            src="/Oyincakesandmore/image/ceo-oyincakesandmore.jpg"
+            alt="Oyincakes CEO"
+            loading="lazy" />
+        </div>
+        <div class="about-content">
+          <div class="section-label">About Us</div>
+          <h2>Authentic Nigerian Cuisine Made Fresh Daily</h2>
+          <p>
+            For over 5 years, Oyincakesandmore has been a trusted source for
+            celebration cakes and sweet treats. We believe every occasion
+            deserves something special.
+          </p>
+          <p>
+            Our master bakers combine traditional techniques with modern flavors
+            to create unforgettable desserts. From intimate gatherings to grand
+            weddings, we've been part of thousands of celebrations.
+          </p>
+          <p>
+            At Oyincakesandmore, we're passionate about bringing you the
+            authentic taste of Nigeria. Every dish is prepared fresh daily using
+            traditional recipes passed down through generations.
+          </p>
+          <p><strong>100% Homemade • Fresh Daily • No Preservatives</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="section-header">
+        <div class="section-label">Testimonials</div>
+        <h2 class="section-title">What Our Customers Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">O</div>
+            <div>
+              <div class="testimonial-name">Obago</div>
+              <div class="testimonial-role">Regular Customer</div>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "The jollof rice is EXACTLY like my grandmother's! I order every
+            week for my family. The meat pies are also incredibly fresh and
+            delicious. Best in KWASU!"
+          </p>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">P</div>
+            <div>
+              <div class="testimonial-name">Pulchritude</div>
+              <div class="testimonial-role">Corporate Client</div>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "We've used Oyincakes for multiple office events and they never
+            disappoint. Professional service, authentic food, and always on
+            time. Highly recommend!"
+          </p>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">BB</div>
+            <div>
+              <div class="testimonial-name">Bae & Boo</div>
+              <div class="testimonial-role">Wedding Clients</div>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "They catered our wedding of 400 guests - the food was exceptional!
+            Everyone kept asking who made the jollof rice. The cake was stunning
+            and delicious. Thank you!"
+          </p>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+      <div class="cta-content">
+        <h2>Get 20% Off Your First Order!</h2>
+        <p>
+          Reach out on WhatsApp to place your order and enjoy exclusive deals,
+          special offers, and fast delivery.
+        </p>
+        <a
+          href="https://wa.me/2349015229618?text=Hi%20there!%20I'm%20ready%20to%20order%20food%20and%20cakes%20😊"
+          target="_blank"
+          class="whatsapp-order">
+          📱 Order Now on WhatsApp
+        </a>
+        <p style="margin-top: 2rem; opacity: 0.9">
+          📧 hello@oyincakes.com | 📱 +234 901 522 9618 | 📍 Malete, Kwara
+          State, Nigeria
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Oyincakesandmore</h3>
+          <p>
+            Bringing you authentic Nigerian homemade delicacies since 2018.
+            Every dish made fresh with love and the finest ingredients.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Twitter">t</a>
+            <a href="#" class="social-link" aria-label="Instagram">i</a>
+            <a href="#" class="social-link" aria-label="WhatsApp">w</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Event Catering</a></li>
+            <li><a href="#services">Custom Cakes</a></li>
+            <li><a href="#services">Party Packs</a></li>
+            <li><a href="#contact">Delivery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul class="footer-links">
+            <li>📧 hello@oyincakes.com</li>
+            <li>📱 +234 901 522 9618</li>
+            <li>📍 Malete, Kwara State</li>
+            <li>🕐 Mon-Sun: 24 Hours</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2025 Oyincakesandmore. All rights reserved. Made with love in
+          Malete, Kwara State 🇳🇬
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile Menu Toggle
+      const menuToggle = document.getElementById("menuToggle");
+      const navMenu = document.getElementById("navMenu");
+
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        menuToggle.textContent = navMenu.classList.contains("active")
+          ? "✕"
+          : "☰";
+      });
+
+      // Close menu when clicking a link
+      navMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+          menuToggle.textContent = "☰";
+        });
+      });
+
+      // Smooth Scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Scroll Animation
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        },
+      );
+
+      document.querySelectorAll(".fade-up").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
