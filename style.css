@@ -103,18 +103,6 @@ header {
     gap: 2rem;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    flex-shrink: 0;
-}
-
-.logo img {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
-}
 
 nav ul {
     display: flex;
@@ -186,6 +174,79 @@ nav a:hover {
 }
 
 /* ============================================
+   LOGO TEXT STYLING
+   ============================================ */
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+    gap: 0.8rem;
+    transition: all 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(200, 16, 46, 0.2);
+    transition: all 0.3s;
+}
+
+.logo:hover img {
+    box-shadow: 0 5px 20px rgba(200, 16, 46, 0.3);
+}
+
+.logo-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-text-main {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--orange) 50%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 1.5px;
+    position: relative;
+    filter: drop-shadow(0 2px 6px rgba(200, 16, 46, 0.25));
+    transition: all 0.3s;
+}
+
+.logo-text-sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--primary);
+    letter-spacing: 2px;
+    margin-top: -2px;
+    margin-left: 2px;
+    opacity: 0.85;
+    transition: all 0.3s;
+}
+
+.logo:hover .logo-text-main {
+    letter-spacing: 2px;
+    filter: drop-shadow(0 3px 10px rgba(200, 16, 46, 0.4));
+}
+
+.logo:hover .logo-text-sub {
+    opacity: 1;
+    color: var(--orange);
+}
+
+/* ============================================
    DARK MODE TOGGLE
    ============================================ */
 
@@ -216,9 +277,16 @@ nav a:hover {
 }
 
 /* Dark Mode Styles */
-body.dark-mode {
-    background: #1a1a1a;
-    color: #e0e0e0;
+body.dark-mode .logo-text-main {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FFA500 50%, #FFD700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 2px 8px rgba(255, 107, 107, 0.4));
+}
+
+body.dark-mode .logo-text-sub {
+    color: #FFA500;
 }
 
 body.dark-mode header {
@@ -1466,13 +1534,25 @@ footer {
         align-items: center;
     }
     
-    .logo {
+        .logo {
         flex: 0 0 auto;
+        gap: 0.6rem;
     }
     
     .logo img {
-        height:60px; 
+        height:50px; 
+        border-radius: 15px;
     }
+    .logo-text-main {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+    .logo-text-sub {
+        font-size: 0.65rem;
+        letter-spacing: 1.5px;
+    }
+    
     
     .header-cta {
         padding: 0.6rem 1.2rem; /* Smaller button */
@@ -1804,10 +1884,25 @@ footer {
         padding: 0.5rem 3%;
     }
 
-    .logo img {
-        height: 55px; /* Even smaller on very small screens */
-        border-radius: 20px;
+     .logo {
+        gap: 0.1rem;
     }
+
+    .logo img {
+        height: 45px;
+        border-radius: 15px;
+    }
+
+    .logo-text-main {
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+    }
+
+    .logo-text-sub {
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+    }
+    
     
     .header-cta {
         padding: 0.5rem 0.8rem;
@@ -1896,3 +1991,15 @@ footer {
         height: 300px;
     }
 }
+
+@media (max-width: 480px) {
+    .logo-text-main {
+        font-size: 1rem;
+        letter-spacing: 0px;
+    }
+
+    .logo-text-sub {
+        font-size: 0.55rem;
+    }
+}
+
