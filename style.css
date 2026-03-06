@@ -1299,8 +1299,9 @@ footer {
     }
 
     .services-ticker {
-        top: 64px;
+        top: 60px; /* Adjusted for mobile header height */
         height: 45px;
+        z-index: 998; /* Below header but above content */
     }
 
     .ticker-item {
@@ -1578,13 +1579,14 @@ footer {
     .section-header {
         margin-bottom: 2rem;
     }
-     .services-ticker {
-        height: 30px;
+      .services-ticker {
+        top: 58px; /* Further adjustment for smaller screens */
+        height: 35px;
     }
 
     .ticker-item {
         font-size: 0.85rem;
-        padding: 0 0.5rem;
+        padding: 0 1rem;
     }
 
     .ticker-item::after {
