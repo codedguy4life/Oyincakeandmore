@@ -179,6 +179,54 @@ nav a:hover {
     color: var(--dark);
 }
 
+/* SCROLLING SERVICES TICKER */
+
+.services-ticker {
+    position: sticky;
+    top: 64px; /* Height of your main header */
+    background: linear-gradient(135deg, var(--primary) 0%, var(--orange) 100%);
+    color: white;
+    overflow: hidden;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
+}
+.ticker-content {
+    display: flex;
+    animation: scroll-left 30s linear infinite;
+    white-space: nowrap;
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 0 3rem;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+}
+
+.ticker-item::after {
+    content: '•';
+    margin-left: 1.5rem;
+    opacity: 0.6;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause animation on hover */
+.services-ticker:hover .ticker-content {
+    animation-play-state: paused;
+}
+
 /* ============================================
    HERO SECTION
    ============================================ */
@@ -1250,6 +1298,20 @@ footer {
         display: block;
     }
 
+    .services-ticker {
+        top: 64px;
+        height: 45px;
+    }
+
+    .ticker-item {
+        font-size: 0.9rem;
+        padding: 0 2rem;
+    }
+
+    .ticker-item::after {
+        margin-left: 2rem;
+    }
+
     /* HERO - COMPACT MOBILE */
     .hero {
         padding: 2rem 5%;
@@ -1515,6 +1577,18 @@ footer {
     /* Extra compact for small phones */
     .section-header {
         margin-bottom: 2rem;
+    }
+     .services-ticker {
+        height: 30px;
+    }
+
+    .ticker-item {
+        font-size: 0.85rem;
+        padding: 0 0.5rem;
+    }
+
+    .ticker-item::after {
+        margin-left: 1rem;
     }
 
     .hero {
