@@ -1580,7 +1580,7 @@ footer {
         margin-bottom: 2rem;
     }
       .services-ticker {
-        top: 58px; /* Further adjustment for smaller screens */
+        top: 64px; /* Further adjustment for smaller screens */
         height: 35px;
     }
 
