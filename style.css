@@ -183,14 +183,14 @@ nav a:hover {
 
 .services-ticker {
     position: sticky;
-    top: 64px; /* Height of your main header */
+    top: 75px; /* Height of your main header */
     background: linear-gradient(135deg, var(--primary) 0%, var(--orange) 100%);
     color: white;
     overflow: hidden;
     height: 50px;
     display: flex;
     align-items: center;
-    z-index: 999;
+    z-index: 998;
     box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
 }
 .ticker-content {
@@ -1299,8 +1299,8 @@ footer {
     }
 
     .services-ticker {
-        top: 60px; /* Adjusted for mobile header height */
-        height: 45px;
+        top: 70px; /* Adjusted for mobile header height */
+        height: 40px;
         z-index: 998; /* Below header but above content */
     }
 
@@ -1580,7 +1580,7 @@ footer {
         margin-bottom: 2rem;
     }
       .services-ticker {
-        top: 64px; /* Further adjustment for smaller screens */
+        top: 65px; /* Further adjustment for smaller screens */
         height: 35px;
     }
 
