@@ -1541,10 +1541,10 @@ b
 /* ============================================
    RESPONSIVE DESIGN - MOBILE OPTIMIZED
    ============================================ */
-
 @media (max-width: 968px) {
+    /* Force hide header-top */
     .header-top {
-        display: none;
+        display: none !important;
     }
     
     header {
@@ -1552,20 +1552,14 @@ b
     }
 
     .nav-container {
-        padding: 0.6rem 5%; 
-        gap: 0.8rem; 
+        padding: 0.6rem 5%;
+        gap: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: nowrap; /* Prevent wrapping */
-        height: auto;
-        min-height: 60px;
-    }
- /* Group toggle and order button together */
-    .nav-container > :not(.logo):not(nav) {
-        display: flex;
-        gap: 0.6rem;
-        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: 100vw;
     }
     
     .logo {
@@ -1574,9 +1568,10 @@ b
     }
     
     .logo img {
-        height:50px; 
+        height: 50px;
         border-radius: 15px;
     }
+
     .logo-text-main {
         font-size: 2rem;
         letter-spacing: 1px;
@@ -1587,24 +1582,12 @@ b
         letter-spacing: 1.5px;
     }
     
-    .header-cta {
-        padding: 0.6rem 1.2rem; /* Smaller button */
-        font-size: 0.85rem;
-        border-radius: 20px;
-        order: 2; /* Position order */
-    }
-    .menu-toggle {
-        display: block;
-        order: 3; /* Position order */
-        font-size: 1.5rem;
-    }
     .nav-actions {
         flex: 0 0 auto;
         display: flex;
         gap: 0.6rem;
         align-items: center;
         margin-left: auto;
-        margin-right: 0.5rem;
     }
 
     .dark-mode-toggle {
@@ -1612,35 +1595,38 @@ b
         height: 36px;
         font-size: 1rem;
         border-width: 2px;
-  }
+    }
 
-
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        flex-shrink: 0;
+    }
 
     nav ul {
         position: fixed;
         top: 60px;
-        height: calc(100vh - 60px);
         left: -100%;
         width: 100%;
-        height: calc(100vh - 64px);
+        height: calc(100vh - 60px);
         background: white;
         flex-direction: column;
         padding: 2rem;
         box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        transition: left 0.3s;
+        transition: left 0.3s ease;
         overflow-y: auto;
+        z-index: 999;
     }
 
     nav ul.active {
         left: 0;
     }
-  
 
-    /* scrolling bar */
+    /* Scrolling ticker */
     .services-ticker {
-        top: 60px; /* Adjusted for mobile header height */
+        top: 60px;
         height: 45px;
-        z-index: 998; /* Below header but above content */
+        z-index: 998;
     }
 
     .ticker-item {
@@ -1651,26 +1637,29 @@ b
     .ticker-item::after {
         margin-left: 2rem;
     }
-    /* HERO - COMPACT MOBILE */
+
+    /* HERO - FIXED LAYOUT */
     .hero {
         padding: 2rem 5%;
     }
 
     .hero-container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 2rem;
     }
 
     .hero-content {
         order: 1;
+        width: 100%;
     }
 
-    /* COMPACT HERO IMAGES - 3 COLUMNS ON MOBILE */
     .hero-images-stack {
         order: 2;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 0.8rem;
+        width: 100%;
     }
 
     .hero-image img,
@@ -1698,14 +1687,14 @@ b
     }
 
     .hero-stats {
+        order: 3;
+        width: 100%;
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 0.8rem;
         padding: 1rem;
     }
-.hero-stats {
-    order: 3;
-    grid-column: 1;
-}
+
     .mini-products {
         gap: 1rem;
     }
@@ -1876,6 +1865,8 @@ b
     .cta {
         padding: 3rem 5%;
     }
+
+    /* MAP */
     .map-section {
         padding: 2.5rem 5%;
     }
@@ -1902,6 +1893,7 @@ b
         height: 50px;
         font-size: 1.6rem;
     }
+
     /* FOOTER */
     footer {
         padding: 2.5rem 5% 2rem;
@@ -1912,6 +1904,7 @@ b
     }
 }
 
+        
 @media (max-width: 640px) {
     /* Extra compact for small phones */
     .nav-container {
