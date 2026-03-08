@@ -1907,25 +1907,33 @@ body.dark-mode nav ul li {
     }
 }
 
-        
 
+@media (max-width: 640px) {
+    /* FORCE HIDE HEADER-TOP */
+    .header-top {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+    }
 
-   @media (max-width: 640px) {
+    /* NAV CONTAINER */
     .nav-container {
-        padding: 0.5rem 3%;
+        padding: 0.5rem 4%;
+        gap: 0.8rem;
+        min-height: 55px;
     }
 
     .logo {
-        gap: 0.1rem;
+        gap: 0.5rem;
     }
 
     .logo img {
-        height: 45px;
-        border-radius: 15px;
+        height: 42px;
+        border-radius: 10px;
     }
 
     .logo-text-main {
-        font-size: 1.6rem; /* FIXED from 6rem! */
+        font-size: 1.4rem; /* FIXED from 6rem! */
         letter-spacing: 0.5px;
     }
 
@@ -1934,36 +1942,40 @@ body.dark-mode nav ul li {
         letter-spacing: 1px;
     }
     
-    .header-cta {
-        padding: 0.5rem 0.8rem;
-        font-size: 0.75rem;
-    }
-
-    .menu-toggle {
-        font-size: 1.3rem;
-    }
-
     .nav-actions {
-        gap: 0.4rem;
+        gap: 0.5rem;
     }
 
     .dark-mode-toggle {
-        width: 32px;
-        height: 32px;
-        font-size: 0.9rem;
-    }
-    
-    .section-header {
-        margin-bottom: 2rem;
+        width: 34px;
+        height: 34px;
+        font-size: 0.95rem;
     }
 
+    .menu-toggle {
+        display: block !important;
+        font-size: 1.4rem;
+    }
+
+    /* HIDE NAV MENU */
+    nav {
+        position: absolute;
+        right: -9999px;
+    }
+
+    nav ul {
+        top: 55px;
+        height: calc(100vh - 55px);
+    }
+
+    /* TICKER */
     .services-ticker {
-        top: 58px;
-        height: 35px;
+        top: 55px;
+        height: 40px;
     }
 
     .ticker-item {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         padding: 0 1rem;
     }
 
@@ -1971,60 +1983,476 @@ body.dark-mode nav ul li {
         margin-left: 1rem;
     }
 
+    /* SECTION HEADERS - REDUCE SPACE */
+    .section-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .section-label {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    /* HERO - COMPACT */
     .hero {
-        padding: 1.5rem 5%;
+        padding: 1.5rem 4%;
+    }
+
+    .hero-container {
+        gap: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
     }
 
     .hero-description {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* HERO IMAGES - 3 COLUMNS */
+    .hero-images-stack {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+        margin: 1rem 0;
+    }
+
+    .hero-image img,
+    .hero-image:first-child img {
+        height: 110px;
+    }
+
+    .hero-badge-overlay {
+        padding: 0.4rem 0.6rem;
+    }
+
+    .hero-badge-overlay .label {
+        font-size: 0.55rem;
+    }
+
+    .hero-badge-overlay .price {
         font-size: 0.9rem;
     }
 
+    /* HERO STATS */
+    .hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.6rem;
+        padding: 0.8rem;
+    }
+
+    .stat-number {
+        font-size: 1.3rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    /* MINI PRODUCTS */
     .mini-products {
         flex-direction: row;
-        gap: 1rem;
-        justify-content: center;
+        gap: 0.8rem;
+        margin: 1rem 0;
     }
 
     .mini-product {
         flex: 1;
-        min-width: 0;
+        padding: 0.6rem 0.8rem;
     }
 
+    .mini-product-img {
+        font-size: 1.3rem;
+    }
+
+    .mini-product-info h4 {
+        font-size: 0.8rem;
+    }
+
+    .mini-product-rating {
+        font-size: 0.75rem;
+    }
+
+    /* HERO BUTTONS */
     .hero-buttons {
         flex-direction: column;
+        gap: 0.8rem;
     }
 
     .btn {
         width: 100%;
+        padding: 0.9rem 1.5rem;
+        font-size: 0.95rem;
     }
 
-    /* Products STAY 2 columns - don't override */
+    /* PRODUCTS - FORCE 2 COLUMNS */
     .products {
-        padding: 2rem 5%;
+        padding: 1.5rem 4%;
     }
 
     .products-grid {
-        gap: 1rem; /* Just reduce gap, keep 2 columns */
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.8rem;
+    }
+
+    .product-card {
+        border-radius: 15px;
     }
 
     .product-badge {
-        padding: 0.4rem 0.9rem;
+        padding: 0.35rem 0.8rem;
+        font-size: 0.7rem;
+        top: 0.7rem;
+        left: 0.7rem;
+    }
+
+    .product-image {
+        height: 140px;
+    }
+
+    .product-info {
+        padding: 0.7rem;
+    }
+
+    .product-name {
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .product-desc {
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.2;
+    }
+
+    /* RATING - Keep horizontal but compact */
+    .product-rating {
+        flex-direction: row;
+        gap: 0.4rem;
+        padding: 0.35rem 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .stars {
         font-size: 0.75rem;
     }
 
-    .services,
-    .why-choose,
-    .process,
-    .about,
-    .testimonials {
-        padding: 2rem 5%;
+    .rating-count {
+        font-size: 0.65rem;
     }
 
+    /* FOOTER - Price and Button side by side */
+    .product-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0.6rem;
+        gap: 0.4rem;
+    }
+
+    .product-price {
+        font-size: 1.1rem;
+    }
+
+    .order-btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.7rem;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    /* SERVICES - COMPACT WITH BIGGER IMAGES */
+    .services {
+        padding: 1.5rem 4%;
+    }
+
+    .services-grid {
+        gap: 1.2rem;
+    }
+
+    .service-card {
+        border-radius: 15px;
+    }
+
+    .service-image {
+        height: 200px; /* Bigger image */
+    }
+
+    .service-content {
+        padding: 1rem;
+    }
+
+    .service-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .service-subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+        line-height: 1.3;
+    }
+
+    .service-features {
+        margin-bottom: 0.6rem;
+    }
+
+    .service-feature {
+        gap: 0.4rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .service-icon {
+        font-size: 1rem;
+    }
+
+    .service-feature-text {
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+
+    .service-description {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .service-cta {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.85rem;
+    }
+
+    /* WHY CHOOSE US */
+    .why-choose {
+        padding: 1.5rem 4%;
+    }
+
+    .why-grid {
+        gap: 1.2rem;
+    }
+
+    .why-item {
+        padding: 1.2rem;
+        gap: 1rem;
+    }
+
+    .why-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.4rem;
+    }
+
+    .why-content h3 {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .why-content p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    /* PROCESS */
+    .process {
+        padding: 1.5rem 4%;
+    }
+
+    .process-steps {
+        gap: 1.5rem;
+    }
+
+    .process-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .process-step h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .process-step p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    /* ABOUT - IMAGE ON TOP */
+    .about {
+        padding: 1.5rem 4%;
+    }
+
+    .about-container {
+        gap: 1.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-image {
+        order: 1;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .about-content {
+        order: 2;
+    }
+
+    .about-content .section-label {
+        margin-bottom: 0.8rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.2;
+    }
+
+    .about-content p {
+        font-size: 0.85rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.6;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+        padding: 1.5rem 4%;
+    }
+
+    .testimonials-grid {
+        gap: 1.2rem;
+    }
+
+    .testimonial-card {
+        padding: 1.2rem;
+    }
+
+    .testimonial-avatar {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .testimonial-name {
+        font-size: 1rem;
+    }
+
+    .testimonial-role {
+        font-size: 0.75rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .testimonial-stars {
+        font-size: 1rem;
+    }
+
+    /* CTA */
+    .cta {
+        padding: 2rem 4%;
+    }
+
+    .cta-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .whatsapp-order {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    /* MAP */
     .map-section {
-        padding: 1.5rem 5%;
+        padding: 1.5rem 4%;
     }
 
     .map-container iframe {
-        height: 300px;
+        height: 280px;
+    }
+
+    .map-info {
+        gap: 0.8rem;
+    }
+
+    .map-info-item {
+        padding: 1.2rem;
+        gap: 0.8rem;
+    }
+
+    .map-info-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.4rem;
+    }
+
+    .map-info-content h4 {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .map-info-content p {
+        font-size: 0.85rem;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 2rem 4% 1.5rem;
+    }
+
+    .footer-grid {
+        gap: 1.5rem;
+    }
+
+    .footer-brand h3 {
+        font-size: 1.4rem;
+    }
+
+    .footer-brand p {
+        font-size: 0.85rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .footer-links a {
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+        padding-top: 1.5rem;
     }
 }
+
+
+   
+   
