@@ -1555,7 +1555,7 @@ b
     .map-container,
     .map-info,
     .footer-grid {
-        max-width: 100vw !important;
+        max-width: 100% !important;
     }
 
     .header-top {
@@ -1937,7 +1937,7 @@ body.dark-mode nav ul li {
     .map-container,
     .map-info,
     .footer-grid {
-        max-width: 100vw !important;
+        max-width: 100% !important;
     }
 
     /* FORCE HIDE HEADER-TOP */
