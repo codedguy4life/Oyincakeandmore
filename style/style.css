@@ -170,8 +170,13 @@ nav a:hover {
     font-size: 1.8rem;
     cursor: pointer;
     color: var(--dark);
+    transition: all 0.3s;
 }
 
+.menu-toggle:hover {
+    color: var(--primary);  
+    transform: scale(1.1);
+}
 /* ============================================
    LOGO TEXT STYLING
    ============================================ */
@@ -334,6 +339,10 @@ body.dark-mode .logo-text-main {
 
 body.dark-mode .logo-text-sub {
     color: #FFA500;
+}
+
+body.dark-mode {
+    background: #1a1a1a;
 }
 
 body.dark-mode header {
@@ -1898,7 +1907,7 @@ footer {
     }
 
     .logo-text-main {
-        font-size: 6rem;
+        font-size: 2rem;
         letter-spacing: 0.5px;
     }
 
@@ -1929,7 +1938,7 @@ footer {
         margin-bottom: 2rem;
     }
     .services-ticker {
-        top: px; /* Further adjustment for smaller screens */
+        top: 58px; /* Further adjustment for smaller screens */
         height: 35px;
     }
 
