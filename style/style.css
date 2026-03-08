@@ -1924,6 +1924,22 @@ body.dark-mode nav ul li {
 
 
 @media (max-width: 640px) {
+/* CRITICAL: Remove all max-width restrictions on mobile */
+    .hero-container,
+    .nav-container,
+    .hero-images-stack,  /* ← ADD THIS HERE TOO */
+    .products-grid,
+    .services-grid,
+    .why-grid,
+    .process-steps,
+    .about-container,
+    .testimonials-grid,
+    .map-container,
+    .map-info,
+    .footer-grid {
+        max-width: 100vw !important;
+    }
+
     /* FORCE HIDE HEADER-TOP */
     .header-top {
         display: none !important;
