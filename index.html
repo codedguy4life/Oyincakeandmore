@@ -966,13 +966,11 @@
         </p>
       </div>
     </footer>
-<button id="backToTop">
+<!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
 
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-<path d="M12 5L6 11H10V19H14V11H18L12 5Z" fill="white"/>
-</svg>
-
-</button>
 
     <script>
       // Mobile Menu Toggle
@@ -1049,32 +1047,25 @@ darkModeToggle.addEventListener('click', () => {
     }
 });
 
-/* BACK TO TOP BUTTON */
+// Existing scripts here...
+      
+      // Back to Top Button
+      const backToTopButton = document.getElementById('backToTop');
 
-const backToTopBtn = document.getElementById("backToTop");
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.add('show');
+        } else {
+          backToTopButton.classList.remove('show');
+        }
+      });
 
-window.addEventListener("scroll", () => {
-
-if (window.scrollY > 400) {
-
-backToTopBtn.classList.add("show");
-
-} else {
-
-backToTopBtn.classList.remove("show");
-
-}
-
-});
-
-backToTopBtn.addEventListener("click", () => {
-
-window.scrollTo({
-top:0,
-behavior:"smooth"
-});
-
-});
+      backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
     </script>
   </body>
 </html>
