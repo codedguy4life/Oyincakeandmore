@@ -1539,63 +1539,59 @@ img[src] {
 b 
 @70
 
-/* BACK TO TOP BUTTON */
+/* ============================================
+   BACK TO TOP BUTTON
+   ============================================ */
 
-#backToTop{
-
-position:fixed;
-bottom:30px;
-right:30px;
-
-width:55px;
-height:55px;
-
-border:none;
-border-radius:50%;
-
-background:#ff7a3d;
-color:white;
-
-font-size:22px;
-font-weight:bold;
-
-cursor:pointer;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-opacity:0;
-visibility:hidden;
-
-box-shadow:0 10px 30px rgba(0,0,0,0.25);
-
-transition:
-opacity .4s ease,
-transform .3s ease,
-background .3s ease;
-
-z-index:999;
-
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--orange) 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(200, 16, 46, 0.3);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
 }
 
-/* show button */
-
-#backToTop.show{
-
-opacity:1;
-visibility:visible;
-
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
-/* hover animation */
-
-#backToTop:hover{
-
-background:#e35f25;
-transform:translateY(-6px);
-
+.back-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(200, 16, 46, 0.4);
 }
+
+.back-to-top:active {
+    transform: translateY(-2px);
+}
+
+/* Dark mode styling */
+body.dark-mode .back-to-top {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FFA500 100%);
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+}
+
+body.dark-mode .back-to-top:hover {
+    box-shadow: 0 12px 30px rgba(255, 107, 107, 0.5);
+}
+
 
 
 
@@ -1989,6 +1985,14 @@ body.dark-mode nav ul li {
 
     .footer-grid {
         gap: 2rem;
+    }
+
+.back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
     }
 }
 
@@ -2563,14 +2567,13 @@ box-sizing: border-box;
         padding-top: 1.5rem;
     }
 
-
-#backToTop{
-bottom:20px;
-right:20px;
-width:48px;
-height:48px;
-font-size:20px;
-}
+.back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+    }
 }
 
 
