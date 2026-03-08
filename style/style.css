@@ -1543,6 +1543,13 @@ b
    ============================================ */
 
 @media (max-width: 968px) {
+html, body {
+        width: 100% !important;  /* Changed from 100vw */
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0;
+        padding: 0;
+    }
  .hero-container,
     .nav-container,
     .products-grid,
@@ -1556,6 +1563,8 @@ b
     .map-info,
     .footer-grid {
         max-width: 100% !important;
+width: 100%;
+box-sizing: border-box;
     }
 
     .header-top {
@@ -1924,6 +1933,14 @@ body.dark-mode nav ul li {
 
 
 @media (max-width: 640px) {
+html, body {
+        width: 100% !important;  /* Changed from 100vw */
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0;
+        padding: 0;
+    }
+    
 /* CRITICAL: Remove all max-width restrictions on mobile */
     .hero-container,
     .nav-container,
@@ -1938,6 +1955,8 @@ body.dark-mode nav ul li {
     .map-info,
     .footer-grid {
         max-width: 100% !important;
+width: 100%;
+box-sizing: border-box;
     }
 
     /* FORCE HIDE HEADER-TOP */
