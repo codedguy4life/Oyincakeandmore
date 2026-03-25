@@ -88,9 +88,12 @@ body {
    ============================================ */
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   background: white;
+  backdrop-filter: blur(10px);
   box-shadow: 0 2px 15px rgba(200, 16, 46, 0.1);
   z-index: 1000;
 }
@@ -259,8 +262,10 @@ nav a:hover {
 /* SCROLLING SERVICES TICKER */
 
 .services-ticker {
-  position: sticky;
+  position: fixed;
   top: 70px; /* Height of your main header */
+  left: 0;
+  width: 100%;
   background: linear-gradient(135deg, var(--primary) 0%, var(--orange) 100%);
   color: white;
   overflow: hidden;
@@ -493,6 +498,7 @@ body.dark-mode .section-subtitle {
   background: linear-gradient(135deg, #fff9f5 0%, #ffe8d6 50%, #fff3e0 100%);
   position: relative;
   overflow: hidden;
+  margin-top: 90px;
 }
 .hero-blur {
   position: absolute;
@@ -616,13 +622,6 @@ body.dark-mode .section-subtitle {
   color: #ffb800;
   font-size: 0.85rem;
   font-weight: 600;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 0;
-  flex-wrap: wrap;
 }
 
 .btn {
@@ -2147,6 +2146,9 @@ body.dark-mode .back-to-top:hover {
   }
 
   /* SECTION HEADERS - REDUCE SPACE */
+  section {
+    scroll-margin-top: 130px;
+  }
   .section-header {
     margin-bottom: 1.5rem;
   }
